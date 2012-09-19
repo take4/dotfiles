@@ -4,8 +4,8 @@ filetype off
 
 "neobundle設定
 if has('vim_starting')
-    set runtimepath+=~/dotfiles/.vim/.bundle/neobundle.vim
-    call neobundle#rc('~/dotfiles/.vim/.bundle/')
+    set runtimepath+=~/.vim/.bundle/neobundle.vim
+    call neobundle#rc('~/.vim/.bundle/')
 endif
 
 "導入プラグイン
