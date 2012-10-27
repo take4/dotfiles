@@ -51,6 +51,7 @@ set encoding=utf-8
 set autoindent
 set backspace=indent,eol,start "オートインデント、改行、インサートモード開始直後にバックスペースキーで削除
 set tabstop=4
+set shiftwidth=4
 set expandtab "タブの代わりに空白文字を挿入する
 set nobackup "バックアップをとらない
 set noswapfile "スワップファイルを作らない
