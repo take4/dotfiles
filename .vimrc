@@ -19,6 +19,9 @@ NeoBundle 'vim-scripts/Align'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'kana/vim-smartchr'
+NeoBundle 'othree/eregex.vim'
+NeoBundle 'tyru/open-browser.vim'
 
 " ファイル名と内容によってファイルタイプを判別し、ファイルタイププラグインを有効にする
 filetype indent plugin on
