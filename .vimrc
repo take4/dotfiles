@@ -191,3 +191,10 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
 "マッピング
 nnoremap <Esc><Esc> :nohlsearch<CR> "検索結果ハイライトをリセット
+nmap gW <Plug>(openbrowser-open)
+
+"-------------------------
+"smartchr
+"-------------------------
+inoremap <expr> = smartchr#loop('=', ' = ', ' == ')
+inoremap <expr> , smartchr#loop(',', ', ', ' => ', '->')
