@@ -59,6 +59,16 @@ set expandtab "タブの代わりに空白文字を挿入する
 set nobackup "バックアップをとらない
 set noswapfile "スワップファイルを作らない
 
+"カーソルを自動的に()の中へ
+imap {} {}<Left>
+imap [] []<Left>
+imap () ()<Left>
+imap "" ""<Left>
+imap '' ''<Left>
+imap <> <><Left>
+imap // /<Left>
+imap /// ///<Left>
+
 "-------------------------
 "neocomplcache
 "-------------------------
