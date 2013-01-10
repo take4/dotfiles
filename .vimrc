@@ -13,6 +13,7 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/neobundle.vim.git'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'vim-scripts/Align'
@@ -58,6 +59,12 @@ set shiftwidth=4
 set expandtab "タブの代わりに空白文字を挿入する
 set nobackup "バックアップをとらない
 set noswapfile "スワップファイルを作らない
+
+"不可視文字表示設定
+set list
+set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
+highlight JpSpace cterm=underline ctermfg=Blue guifg=Blue
+au BufRead,BufNew * match JpSpace /　/
 
 "カーソルを自動的に()の中へ
 imap {} {}<Left>
@@ -190,7 +197,7 @@ noremap <C-U><C-A> :Unite UniteWithBufferDir -buffer-name=files buffer
 au FileType unite nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
 au FileType unite inoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
 
-"ウィンドウを建てに分割して開く
+"ウィンドウを縦に分割して開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
 au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
 
