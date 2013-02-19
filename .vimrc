@@ -214,3 +214,13 @@ nmap gW <Plug>(openbrowser-open)
 "-------------------------
 inoremap <expr> = smartchr#loop('=', ' = ', ' == ')
 inoremap <expr> , smartchr#loop(',', ', ', ' => ', '->')
+
+"-------------------------
+"vimfiler
+"-------------------------
+"セーフモード無効
+let g:vimfiler_safe_mode_by_default = 0
+"vimfilerをデフォルトに設定
+let g:vimfiler_as_default_explorer = 1
+"現在開いているバッファをIDE風に開く
+nnoremap <F2> :VimFilerBufferDir -split -simple -winwidth=35 -no-quit<CR>
