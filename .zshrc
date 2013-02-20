@@ -37,3 +37,4 @@ plugins=(git brew heroku debian)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export LANG=en_US.UTF-8
