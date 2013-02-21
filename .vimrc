@@ -23,6 +23,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'kana/vim-smartchr'
 NeoBundle 'othree/eregex.vim'
 NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'Lokaltog/vim-powerline'
 
 " ファイル名と内容によってファイルタイプを判別し、ファイルタイププラグインを有効にする
 filetype indent plugin on
@@ -41,9 +42,6 @@ set visualbell
 set laststatus=2 "ステータスラインを常に表示
 set cmdheight=2 "コマンドラインの高さを2行に
 set showmatch "閉じ括弧が入力されたとき、対応する括弧を表示する
-
-"ステータスラインに文字コードと改行文字を表示する
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 "検索設定
 set ignorecase "大文字・小文字を区別しない
