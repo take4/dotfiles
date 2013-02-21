@@ -64,7 +64,7 @@ set noswapfile "スワップファイルを作らない
 set list
 set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
 highlight JpSpace cterm=underline ctermfg=Blue guifg=Blue
-au BufRead,BufNew * match JpSpace /　/
+match JpSpace /　/
 
 "カーソルを自動的に()の中へ
 imap {} {}<Left>
