@@ -1,7 +1,7 @@
 [core]
     excludesfile = ~/.gitignore
 [include]
-	path = .gitconfig.local
+    path = ~/.gitconfig.local
 [color]
 	ui = true
 [core]
