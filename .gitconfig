@@ -1,0 +1,15 @@
+[core]
+    excludesfile = ~/.gitignore
+[include]
+	path = .gitconfig.local
+[color]
+	ui = true
+[core]
+	editor = vim
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    di = diff
+    dic = diff --cached
