@@ -19,6 +19,8 @@ NeoBundle 'Shougo/vimproc', {
     \}
 NeoBundle 'Shougo/neobundle.vim.git'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neosnippet.git'
+NeoBundle 'honza/snipmate-snippets'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'thinca/vim-quickrun'
@@ -120,7 +122,8 @@ function! s:my_cr_function()
 return pumvisible() ? neocomplcache#close_popup() . "\<CR>" : "\<CR>"
 endfunction
 " <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+"inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
@@ -227,3 +230,19 @@ let g:vimfiler_safe_mode_by_default = 0
 let g:vimfiler_as_default_explorer = 1
 "現在開いているバッファをIDE風に開く
 nnoremap <F2> :VimFilerBufferDir -split -simple -winwidth=35 -no-quit<CR>
+
+"-------------------------
+"NeoSnippet
+"-------------------------
+" Plugin key-mappings.
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
