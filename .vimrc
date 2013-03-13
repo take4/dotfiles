@@ -248,3 +248,9 @@ if has('conceal')
 endif
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
+
+"-------------------------
+"syntastic
+"-------------------------
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=2
