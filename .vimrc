@@ -34,6 +34,7 @@ NeoBundle 'othree/eregex.vim'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'airblade/vim-gitgutter'
 
 " ファイル名と内容によってファイルタイプを判別し、ファイルタイププラグインを有効にする
 filetype indent plugin on
