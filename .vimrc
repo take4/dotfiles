@@ -20,7 +20,7 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'Shougo/neobundle.vim.git'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet.git'
-NeoBundle 'honza/snipmate-snippets'
+NeoBundle 'honza/vim-snippets'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'thinca/vim-quickrun'
@@ -249,7 +249,7 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 " Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/.bundle/snipmate-snippets/snippets'
+let g:neosnippet#snippets_directory='~/.vim/.bundle/vim-snippets/snippets'
 
 "-------------------------
 "syntastic
