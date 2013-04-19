@@ -65,6 +65,13 @@ set fileencodings=ucs-bom,utf-8,iso-2022-jp,euc-jp,sjis,cp932
 set autoindent
 set smartindent
 set backspace=indent,eol,start "オートインデント、改行、インサートモード開始直後にバックスペースキーで削除
+augroup vimrc
+autocmd! FileType perl setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+augroup END
 set tabstop=4
 set shiftwidth=4
 set expandtab "タブの代わりに空白文字を挿入する
