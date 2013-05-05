@@ -35,6 +35,7 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'Lokaltog/vim-easymotion'
 
 " ファイル名と内容によってファイルタイプを判別し、ファイルタイププラグインを有効にする
 filetype indent plugin on
@@ -260,3 +261,9 @@ let g:neosnippet#snippets_directory='~/.vim/.bundle/vim-snippets/snippets'
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
 let g:syntastic_javascript_checker = 'jshint'
+
+"-------------------------
+"easy-motion
+"-------------------------
+let g:EasyMotion_leader_key = "'"
+let g:EasyMotion_grouping=1
