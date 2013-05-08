@@ -90,6 +90,10 @@ imap "" ""<Left>
 imap '' ''<Left>
 imap <> <><Left>
 
+"vimrcオープンと再読込
+nnoremap <F7> :<C-u>edit ~/.vimrc<CR>
+nnoremap <F8> :<C-u>source ~/.vimrc<CR>
+
 "-------------------------
 "neocomplcache
 "-------------------------
