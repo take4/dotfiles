@@ -89,6 +89,7 @@ imap () ()<Left>
 imap "" ""<Left>
 imap '' ''<Left>
 imap <> <><Left>
+imap %% %%<Left>
 
 "vimrcオープンと再読込
 nnoremap <F7> :<C-u>edit ~/.vimrc<CR>
