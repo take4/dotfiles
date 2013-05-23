@@ -39,4 +39,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export LANG=en_US.UTF-8
 export EDITOR=vim
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
