@@ -13,5 +13,10 @@
     ci = commit
     st = status
     br = branch
+    pu = push
+    mg = merge
+    mgs = merge --squash
+    re = rebase
     di = diff
     dic = diff --cached
+    pick = cherry-pick
