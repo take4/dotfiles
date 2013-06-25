@@ -15,6 +15,7 @@
     br = branch
     pu = push
     mg = merge
+    mgnff = merge --no-ff
     mgs = merge --squash
     re = rebase
     di = diff
