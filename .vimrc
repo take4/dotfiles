@@ -71,6 +71,7 @@ set backspace=indent,eol,start "オートインデント、改行、インサー
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+set shiftround
 "au FileType perl setlocal shiftwidth=2 tabstop=2 softtabstop=2
 set expandtab "タブの代わりに空白文字を挿入する
 set nobackup "バックアップをとらない
