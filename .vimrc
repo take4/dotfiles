@@ -92,6 +92,9 @@ imap '' ''<Left>
 imap <> <><Left>
 imap %% %%<Left>
 
+"対応括弧に<>を追加
+set matchpairs& matchpairs+=<:>
+
 "vimrcオープンと再読込
 nnoremap <F7> :<C-u>edit ~/.vimrc<CR>
 nnoremap <F8> :<C-u>source ~/.vimrc<CR>
