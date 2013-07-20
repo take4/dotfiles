@@ -55,6 +55,7 @@ set visualbell
 set laststatus=2 "ステータスラインを常に表示
 set cmdheight=2 "コマンドラインの高さを2行に
 set showmatch "閉じ括弧が入力されたとき、対応する括弧を表示する
+set cursorline
 
 "検索設定
 set ignorecase "大文字・小文字を区別しない
