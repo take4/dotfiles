@@ -37,6 +37,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 " ファイル名と内容によってファイルタイプを判別し、ファイルタイププラグインを有効にする
 filetype indent plugin on
@@ -293,3 +294,11 @@ let g:syntastic_javascript_checker = 'jshint'
 "-------------------------
 let g:EasyMotion_leader_key = "'"
 let g:EasyMotion_grouping=1
+
+"-------------------------
+"Indent Guides
+"-------------------------
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
