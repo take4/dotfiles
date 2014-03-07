@@ -4,8 +4,8 @@ filetype off
 
 "neobundle設定
 if has('vim_starting')
-    set runtimepath+=~/.vim/.bundle/neobundle.vim
-    call neobundle#rc('~/.vim/.bundle/')
+    set runtimepath+=~/.vim/bundle/neobundle.vim
+    call neobundle#rc('~/.vim/bundle/')
 endif
 
 "導入プラグイン
@@ -38,6 +38,8 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+
+NeoBundleCheck
 
 " ファイル名と内容によってファイルタイプを判別し、ファイルタイププラグインを有効にする
 filetype indent plugin on
