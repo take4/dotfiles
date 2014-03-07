@@ -1,11 +1,12 @@
 [core]
     excludesfile = ~/.gitignore
+    editor = vim
+    precomposeunicode = true
+    quotepath = true
 [include]
     path = ~/.gitconfig.local
 [color]
 	ui = true
-[core]
-	editor = vim
 [push]
 	default = simple
 [alias]
