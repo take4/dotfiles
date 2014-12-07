@@ -4,9 +4,11 @@ filetype off
 
 "neobundle設定
 if has('vim_starting')
-    set runtimepath+=~/.vim/bundle/neobundle.vim
-    call neobundle#rc('~/.vim/bundle/')
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 "導入プラグイン
 NeoBundle 'Shougo/vimproc', {
@@ -40,10 +42,12 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
-NeoBundleCheck
+call neobundle#end()
 
 " ファイル名と内容によってファイルタイプを判別し、ファイルタイププラグインを有効にする
 filetype indent plugin on
+
+NeoBundleCheck
 
 "表示設定 
 syntax on
