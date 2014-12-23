@@ -1,2 +1,6 @@
+# mac
 .DS_Store
 thumbs.db
+
+# atom Remote Sync
+.remote-sync.json
